@@ -1,5 +1,5 @@
-Starter code for quiz-app beginner react project
+Code for quiz-app beginner react project
 
 - clone repo
-- npm install
-- npm start
+- yarn install
+- yarn start

@@ -79,7 +79,7 @@ export default function App() {
 				<div className='score-section'>{name} You scored {score} out of {questions.length}
 				</div>
 				<div>
-					<a href='/'>
+					<a href='/quiz-app'>
 						<button>Restart Quiz</button>
 					</a>
 				</div>
