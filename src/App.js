@@ -76,10 +76,10 @@ export default function App() {
       score when the user has answered all the questions */}
 			{showScore ? (
 				<>
-				<div className='score-section'>{name} You scored {score} out of {questions.length}
+				<div className='score-section'>{name}, You scored {score} out of {questions.length}
 				</div>
 				<div>
-					<a href='/quiz-app'>
+					<a href='/quiz-app/'>
 						<button>Restart Quiz</button>
 					</a>
 				</div>
@@ -93,7 +93,7 @@ export default function App() {
 						<div className='question-text'>{questions[currentQuestion].questionText}</div>
 					</div>
 					<div className='answer-section'>
-						{questions[currentQuestion].answerOptions.map((answerOption) => <button key={answerOption.answerText} onClick={() =>handleAnswerButtonClick(answerOption.isCorrect)}>{answerOption.answerText}</button>)}
+						{questions[currentQuestion].answerOptions.map((answerOption) => <button key={answerOption.answerText} className='answerButton' onClick={() =>handleAnswerButtonClick(answerOption.isCorrect)}>{answerOption.answerText}</button>)}
 					</div>
 				</>
 			)}
